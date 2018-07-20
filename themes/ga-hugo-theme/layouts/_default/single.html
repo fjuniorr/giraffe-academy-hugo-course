@@ -10,11 +10,19 @@
 
      <div style="margin:25px;">
           <h1>{{.Title}}</h1>
+
           <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+
           <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
+          
           <div style="font-size:18px;">{{.Content}}</div>
+
+          <div style="color:grey; font-size:12px;">
+
           <p>Last update by {{ .GitInfo.AuthorName }} on {{ .GitInfo.AuthorDate }}</p>
-          <p>{{ .GitInfo.Subject }}</p>
+          <p><a href="https://github.com/fjuniorr/giraffe-academy-hugo-course/commit/{{.GitInfo.Hash}}" target="_blank">{{ .GitInfo.Subject }}</a></p>
+           
+          </div>
      </div>
      {{ partial "footer" . }}
 </body>
