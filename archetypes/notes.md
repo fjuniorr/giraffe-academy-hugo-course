@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
 ---
 
 When creating new content with `hugo new`, if there is an archetype with the same name of the directory that the content is being inserted, the matching archetype will be used instead of `archetypes/default.md`

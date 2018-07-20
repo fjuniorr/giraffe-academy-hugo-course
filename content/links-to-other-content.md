@@ -1,7 +1,7 @@
 ---
 title: "Links to Other Content"
 date: 2018-07-19T12:08:53-03:00
-draft: true
+draft: false
 ---
 
 There are multiple ways to link to other content, internal or external.
